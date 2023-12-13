@@ -1,17 +1,16 @@
 pragma solidity ^0.8.0;
 
 contract Practice {
-
-    constructor (){
-        name = "Hello";
-        age = 18;
+    constructor() {
+        name;
+        age;
     }
 
-    function getName() public view return(string memoery){
-                return name;
+    function getName() public returns (string memory) {
+        return name;
     }
 
-    function getAge() public view return(uint){
+    function getAge() public returns (uint) {
         return age;
     }
 }
