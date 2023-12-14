@@ -147,15 +147,15 @@ module.exports = {
       development: {
           host: "127.0.0.1",
           port: 7545, 
-          network_id: "5777",
+          network_id: "*",
       },
   },
   compilers: {
       solc: {
-          version: "^0.8.7",
+          version: "^0.5.1",
       },
   },
-  // web3 : {
+    // web3 : {
   //   provider : () => new web3.providers.HttpsProvider("HTTP://127.0.0.1:7545")
   // }
 };
