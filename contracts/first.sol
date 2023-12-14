@@ -2,14 +2,9 @@
 
 pragma solidity ^0.8.0;
 
-contract SContract {
-    string public name;
-    uint public age;
-
-    constructor() {
-        name = "Rohan";
-        age = 18;
-    }
+contract first {
+    string public name = "Rohan";
+    uint public age = 18;
 
     function getName() public view returns (string memory) {
         return name;
@@ -19,7 +14,7 @@ contract SContract {
         return age;
     }
 
-    function setAge() public {
-        age += 2;
-    }
+    // function setAge() public {
+    //     age += 2;
+    // }
 }
