@@ -140,12 +140,14 @@
 //   // }
 // };
 
+
+
 module.exports = {
   networks: {
       development: {
           host: "127.0.0.1",
-          port: 7545, // Update with your Ganache port
-          network_id: "*",
+          port: 7545, 
+          network_id: "5777",
       },
   },
   compilers: {
@@ -153,4 +155,7 @@ module.exports = {
           version: "^0.8.0",
       },
   },
+  web3 : {
+    provider : () => new web3.providers.HttpsProvider("http://127.0.0.1:7545")
+  }
 };
