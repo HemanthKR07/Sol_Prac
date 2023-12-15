@@ -9,16 +9,24 @@ contract first {
     // constructor(name) {
     //     name = "Control your brain !";
     // }
+
+    function getName() public view returns (string memory) {
+        return name;
+    }
+
+    function getAge() public view returns (uint) {
+        return age;
+    }
+
+    function setName(string memory Nam) public {
+        name = Nam;
+    }
+
+    function setAge(uint Age) public {
+        age = Age;
+    }
+
+    // function setAge() public {
+    //     age += 2;
+    // }
 }
-
-// function getName() public view returns (string memory) {
-//     return name;
-// }
-
-// function getAge() public view returns (uint) {
-//     return age;
-// }
-
-// function setAge() public {
-//     age += 2;
-// }
